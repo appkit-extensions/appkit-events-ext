@@ -1,0 +1,62 @@
+{
+    "options": {
+        "fields": {
+            "title": {
+                "label": "Title",
+                "description": "Title for this module.",
+                "default": "Events",
+                "group": "General",
+                "heading": "",
+                "type": "String"
+            },
+            "enable-ui-override": {
+                "label": "Enable UI Override",
+                "description": "Override the default UI for this module",
+                "group": "Advanced",
+                "heading": "",
+                "type": "YesNo"
+            },
+            "enable-xml-editing": {
+                "label": "Enable XML Editing",
+                "description": "Show XML to allow advanced editing",
+                "group": "Advanced",
+                "heading": "",
+                "type": "YesNo"
+            }
+        },
+        "groups": [ "General", "Advanced" ]
+    },
+    "data": {
+        "events": {
+            "child": "event",
+            "name": "Event",
+            "title": "title",
+            "description": "details",
+            "extra": "starts",
+            "fields": [
+                {
+                    "key": "title",
+                    "type": "string",
+                    "format": "single-line",
+                    "caption": "Title",
+                    "minLength": 2,
+                    "maxLength": 200,
+                    "required": true
+                },
+                {
+                    "key": "details",
+                    "type": "string",
+                    "format": "multi-line",
+                    "caption": "Details",
+                    "required": true
+                },
+                {
+                    "key": "starts",
+                    "type": "datetime",
+                    "caption": "Starts",
+                    "required": true
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "appkit-events-ext",
+  "version": "1.0.0",
+  "description": "appkit-events-ext extension for Appkit",
+  "scripts": {
+  },
+  "keywords": [],
+  "repository": "empty",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "engines": {
+    "appkit": "^1.0.0"
+  },
+  "appkit": {
+    "modules": [
+      {
+        "id": "appkit-news",
+        "name": "Recent News",
+        "schema": "schema.json",
+        "content": {
+          "edit": {
+            "events": {
+              "name": "Events",
+              "data": "events"
+            }
+          }
+        }
+      }
+    ],
+    "components": [],
+    "libs": []
+  }
+}
