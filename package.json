@@ -2,13 +2,13 @@
   "name": "appkit-events-ext",
   "version": "1.0.0",
   "description": "appkit-events-ext extension for Appkit",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [],
   "repository": "empty",
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "appkit-wix-calendars": "git+https://github.com/appkit-extensions/appkit-wix-calendars.git"
   },
   "engines": {
     "appkit": "^1.0.0"
