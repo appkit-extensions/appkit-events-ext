@@ -16,8 +16,8 @@
   "appkit": {
     "modules": [
       {
-        "id": "appkit-news",
-        "name": "Recent News",
+        "id": "appkit-events",
+        "name": "Events",
         "schema": "schema.json",
         "content": {
           "edit": {
