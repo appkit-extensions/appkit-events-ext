@@ -33,9 +33,14 @@
             "title": "title",
             "description": "summary",
             "tag":  "category",
+            "key": "id",
             "extra": "starts",
             "sort": "starts",
             "fields": [
+                {
+                    "key": "id",
+                    "type": "id"
+                },
                 {
                     "key": "title",
                     "type": "string",
