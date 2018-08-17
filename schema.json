@@ -34,7 +34,7 @@
             "description": "summary",
             "tag":  "category",
             "extra": "starts",
-            "sort": "-published",
+            "sort": "starts",
             "fields": [
                 {
                     "key": "title",
