@@ -27,12 +27,15 @@
         "groups": [ "General", "Advanced" ]
     },
     "data": {
-        "events": {
+        "articles": {
             "child": "event",
             "name": "Event",
+            "thumb": "image",
             "title": "title",
-            "description": "details",
+            "description": "summary",
+            "tag":  "category",
             "extra": "starts",
+            "sort": "-published",
             "fields": [
                 {
                     "key": "title",
@@ -44,10 +47,17 @@
                     "required": true
                 },
                 {
-                    "key": "details",
+                    "key": "category",
+                    "type": "select",
+                    "bind": "categories",
+                    "caption": "Category",
+                    "required": true
+                },
+                {
+                    "key": "summary",
                     "type": "string",
                     "format": "multi-line",
-                    "caption": "Details",
+                    "caption": "Summary",
                     "required": true
                 },
                 {
@@ -55,6 +65,49 @@
                     "type": "datetime",
                     "caption": "Starts",
                     "required": true
+                },
+                {
+                    "key": "ends",
+                    "type": "datetime",
+                    "caption": "Ends",
+                    "required": false
+                },
+                {
+                    "key": "link",
+                    "type": "string",
+                    "format": "uri",
+                    "caption": "Article URL",
+                    "pattern": "^(https?|tel|sms|mail|itms)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]*[-A-Za-z0-9+&@#/%=~_|]$",
+                    "required": false,
+                    "placeholder": "http://some.server.com"
+                },
+                {
+                    "key": "content",
+                    "type": "content",
+                    "format": "rtf",
+                    "caption": "Body",
+                    "required": true
+                }
+            ]
+        },
+        "categories": {
+            "child": "category",
+            "name": "Category",
+            "title": "name",
+            "key": "id",
+            "fields": [
+                {
+                    "key": "name",
+                    "type": "string",
+                    "format": "single-line",
+                    "caption": "Name",
+                    "minLength": 2,
+                    "maxLength": 200,
+                    "required": true
+                },
+                {
+                    "key": "id",
+                    "type": "id"
                 }
             ]
         }
