@@ -34,9 +34,6 @@
         "ui": {
           "initialPage": "start",
           "pages": {
-            "article": "ui/pages/article.js",
-            "authors": "ui/pages/authors.js",
-            "profile": "ui/pages/profile.js",
             "start": "ui/pages/start.js"
           },
           "components": {
