@@ -105,6 +105,7 @@
             "child": "category",
             "name": "Category",
             "title": "name",
+            "thumb": "icon",
             "key": "id",
             "fields": [
                 {
@@ -119,6 +120,13 @@
                 {
                     "key": "id",
                     "type": "id"
+                },
+                {
+                    "key": "icon",
+                    "type": "fileref",
+                    "format": "jpg, png, jpeg",
+                    "caption": "Icon",
+                    "required": true
                 }
             ]
         }
