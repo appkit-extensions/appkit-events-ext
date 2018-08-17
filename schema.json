@@ -27,7 +27,7 @@
         "groups": [ "General", "Advanced" ]
     },
     "data": {
-        "articles": {
+        "events": {
             "child": "event",
             "name": "Event",
             "thumb": "image",
@@ -76,7 +76,7 @@
                     "key": "link",
                     "type": "string",
                     "format": "uri",
-                    "caption": "Article URL",
+                    "caption": "Event URL",
                     "pattern": "^(https?|tel|sms|mail|itms)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]*[-A-Za-z0-9+&@#/%=~_|]$",
                     "required": false,
                     "placeholder": "http://some.server.com"
