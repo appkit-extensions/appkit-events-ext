@@ -4,10 +4,17 @@
             "title": {
                 "label": "Title",
                 "description": "Title for this module.",
-                "default": "Events",
+                "default": "News",
                 "group": "General",
                 "heading": "",
                 "type": "String"
+            },
+            "enable-live-updates": {
+                "label": "Enable Live Content Updates",
+                "description": "Content gets automatically published without manually publishing",
+                "group": "Advanced",
+                "heading": "",
+                "type": "YesNo"
             },
             "enable-ui-override": {
                 "label": "Enable UI Override",
@@ -62,7 +69,7 @@
                     "type": "string",
                     "format": "multi-line",
                     "caption": "Summary",
-                    "required": true
+                    "required": false
                 },
                 {
                     "key": "starts",
@@ -90,7 +97,7 @@
                     "type": "content",
                     "format": "rtf",
                     "caption": "Body",
-                    "required": true
+                    "required": false
                 }
             ]
         },
