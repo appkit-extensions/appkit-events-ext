@@ -30,7 +30,6 @@
         "events": {
             "child": "event",
             "name": "Event",
-            "thumb": "image",
             "title": "title",
             "description": "summary",
             "tag":  "category",
