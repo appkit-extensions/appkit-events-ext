@@ -1,6 +1,6 @@
 {
   "name": "appkit-events-ext",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "appkit-events-ext extension for Appkit",
   "scripts": {},
   "keywords": [],
@@ -24,6 +24,10 @@
             "events": {
               "name": "Events",
               "data": "events"
+            },
+            "categories": {
+              "name": "Categories",
+              "data": "categories"
             }
           }
         }
