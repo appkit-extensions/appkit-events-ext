@@ -84,6 +84,13 @@
                     "required": false
                 },
                 {
+                    "key": "image",
+                    "type": "fileref",
+                    "format": "jpg, png, jpeg",
+                    "caption": "Image",
+                    "required": false
+                },
+                {
                     "key": "link",
                     "type": "string",
                     "format": "uri",
