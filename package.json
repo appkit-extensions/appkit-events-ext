@@ -27,7 +27,8 @@
             },
             "categories": {
               "name": "Categories",
-              "data": "categories"
+              "data": "categories",
+              "display": "grid"
             }
           }
         },
