@@ -41,6 +41,7 @@
             "description": "summary",
             "tag":  "category",
             "key": "id",
+            "thumb": "image",
             "extra": "starts",
             "sort": "starts",
             "fields": [
