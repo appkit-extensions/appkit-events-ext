@@ -86,9 +86,9 @@
                     "required": true
                 },
                 {
-                    "key": "ends",
-                    "type": "datetime",
-                    "caption": "Ends",
+                    "key": "duration",
+                    "type": "duration",
+                    "caption": "Duration",
                     "required": false
                 },
                 {
