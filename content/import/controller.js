@@ -1,6 +1,6 @@
 angular.module("moduleContent")
-.controller("extensionContentCtrl", ["$scope", "$attrs", "$parse",
-    function extensionContentCtrl($scope, $attrs, $parse) {
+.controller("eventsImportContentCtrl", ["$scope", "$attrs", "$parse",
+    function eventsImportContentCtrl($scope, $attrs, $parse) {
 
         var ctxt = null;
         var itemKey = $parse($attrs.itemKey)($scope);
