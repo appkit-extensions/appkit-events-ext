@@ -9,8 +9,5 @@ angular.module("moduleContent")
         $scope.name = itemKey;
 
         ctxt = $scope.getContext(itemKey)
-        if (!ctxt) {
-            showInvalid("Could not find the data type matching '" + itemKey + "'.")
-        }
     }
 ]);
