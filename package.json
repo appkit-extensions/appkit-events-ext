@@ -28,6 +28,11 @@
             "categories": {
               "name": "Categories",
               "data": "categories"
+            },
+            "import": {
+              "name": "Import",
+              "view": "content/import/view.js",
+              "controller": "content/import/controller.js"
             }
           }
         },

@@ -1,0 +1,17 @@
+<style>
+</style>
+<div class="toolbar toolbar-fixed">
+    <ul class="frame">
+        <li><button class="btn flat" ng-click="addItem()" ng-disabled="data.items == null"><i class="icon-plus"></i></button></li>
+    </ul>
+</div>
+<div class="row with-fixed-toolbar">
+
+    <div ng-if="error" class="pageError">{{error}}</div>
+
+    {{name}}
+
+</div>
+<div id="propbar">
+    <div ng-include="" src="props"></div>
+</div>
