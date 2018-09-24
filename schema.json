@@ -29,6 +29,13 @@
                 "group": "Advanced",
                 "heading": "",
                 "type": "YesNo"
+            },
+            "enable-editor-access": {
+                "label": "Show in Editing Area",
+                "description": "Allows this module's content to be edited in the Editing area",
+                "group": "Advanced",
+                "heading": "Content Editing",
+                "type": "YesNo"
             }
         },
         "groups": [ "General", "Advanced" ]
@@ -41,6 +48,7 @@
             "description": "summary",
             "tag":  "category",
             "key": "id",
+            "thumb": "image",
             "extra": "starts",
             "sort": "starts",
             "fields": [
@@ -78,9 +86,9 @@
                     "required": true
                 },
                 {
-                    "key": "ends",
-                    "type": "datetime",
-                    "caption": "Ends",
+                    "key": "duration",
+                    "type": "duration",
+                    "caption": "Duration",
                     "required": false
                 },
                 {
