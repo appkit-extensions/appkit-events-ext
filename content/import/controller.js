@@ -5,7 +5,7 @@ angular.module("moduleContent")
         var ctxt = null;
         var itemKey = $parse($attrs.itemKey)($scope);
 
-        $scope.error = "err";
+        $scope.error = null;
         $scope.name = itemKey;
 
         ctxt = $scope.getContext(itemKey)
