@@ -32,7 +32,7 @@
             },
             "import": {
               "name": "Import",
-              "view": "content/import/view.js",
+              "view": "content/import/view.html",
               "controller": "content/import/controller.js"
             }
           }
