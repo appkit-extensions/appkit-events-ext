@@ -12,7 +12,7 @@ angular.module("moduleContent")
         $scope.parseICal = function () {
             var data = ICAL.parse($scope.textICal);
             var calendar = new ICAL.Component(data);
-            var events = calendar.getFirstSubcomponent('vevent');
+            var events = calendar.getAllSubcomponents('vevent');
             var items = [];
             for (var i=0; i<events.length; i++) {
                 var event = new ICAL.Event(events[i]);
