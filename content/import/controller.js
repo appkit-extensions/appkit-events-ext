@@ -14,14 +14,20 @@ angular.module("moduleContent")
             var calendar = new ICAL.Component(data);
             var events = calendar.getAllSubcomponents('vevent');
             var items = [];
+            var now = new Date().getTime();
             for (var i=0; i<events.length; i++) {
                 var event = new ICAL.Event(events[i]);
+
+                // ignore old events
+                if (event.startTime.toJSDate().getTime() < now) {
+                    continue;
+                }
 
                 // find categories
                 var fields = event.component.jCal[1];
                 for (var j=0; j<fields.length; j++) {
                     if (fields[j][0] === "categories") {
-                        event.categories = fields[j][0][3];
+                        event.categories = fields[j][3];
                         break;
                     }
                 }
