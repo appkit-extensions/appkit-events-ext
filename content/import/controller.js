@@ -1,13 +1,8 @@
 angular.module("moduleContent")
 .controller("eventsImportContentCtrl", ["$scope", "$attrs", "$parse",
-    function eventsImportContentCtrl($scope, $attrs, $parse) {
+    function eventsImportContentCtrl($scope) {
 
-        var ctxt = null;
-        var itemKey = $parse($attrs.itemKey)($scope);
-
-        $scope.error = null;
-        $scope.name = itemKey;
-
-        ctxt = $scope.getContext(itemKey)
+        $scope.error = "#ERROR#";
+        $scope.name = "Dave";
     }
 ]);
