@@ -13,7 +13,17 @@
 
         <textarea ng-model="textICal"></textarea>
         <button ng-click="parseICal()">Import</button>
-        <pre>{{resultsICal}}</pre>
+
+        <ul selectable-list selected="selected" selected-item="selectedItem" class="detailed">
+        <li selectable-item="item" select-on="uid" ng-repeat="item in events ng-class="{'with-thumb-custom': hasThumb}">
+            <span class="disclosure tag">{{'category'}}</span>
+            <span class="thumb" ng-if="hasThumb && data.hasItemThumb(item)">
+                <img ng-src="{{data.getItemThumb(item, 100, 's')}}" class="img-rounded custom">
+            </span>
+            <h6>{{item.summary}}</h6>
+            <p>{{item.description}}</p>
+        </li>
+    </ul>
 
     </div>
     <div id="propbar">
