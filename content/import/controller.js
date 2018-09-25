@@ -20,8 +20,8 @@ angular.module("moduleContent")
                 // find categories
                 var fields = event.component.jCal[1];
                 for (var j=0; j<fields.length; j++) {
-                    if (fields[i][0] === "categories") {
-                        event.categories = fields[i][0][3];
+                    if (fields[j][0] === "categories") {
+                        event.categories = fields[j][0][3];
                         break;
                     }
                 }
