@@ -5,13 +5,26 @@ angular.module("moduleContent")
         $scope.error = "#ERROR#";
         $scope.hasThumb = false;
 
+        var ctxt = $scope.getContext("events");
+
         $scope.textICal = "";
         $scope.resultsICal = "";
         $scope.items = [];
 
-        $scope.parseICal = function () {
-            var data = ICAL.parse($scope.textICal);
-            var calendar = new ICAL.Component(data);
+        $scope.load = function () {
+            $.prompt("Enter the URL for the ICS to open...", function (result) {
+                if (result !== null) {
+                    ctxt.readTextFromUrl(result)
+                    .then(function (ics) {
+                        console.log(ics);
+                        $scope.parseICal(ics);
+                    })
+                }
+            });
+        }
+
+        $scope.parseICal = function (ics) {
+            var calendar = new ICAL.Component(ics);
             var events = calendar.getAllSubcomponents('vevent');
             var items = [];
             var now = new Date().getTime();
