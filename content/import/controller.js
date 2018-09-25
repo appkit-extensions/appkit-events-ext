@@ -19,7 +19,7 @@ angular.module("moduleContent")
                 var event = new ICAL.Event(events[i]);
 
                 // ignore old events
-                if (event.startTime.toJSDate().getTime() < now) {
+                if (event.startDate.toJSDate().getTime() < now) {
                     continue;
                 }
 
