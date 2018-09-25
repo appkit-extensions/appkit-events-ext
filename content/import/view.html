@@ -16,7 +16,7 @@
 
         <ul selectable-list selected="selected" selected-item="selectedItem" class="detailed">
         <li selectable-item="item" select-on="uid" ng-repeat="item in items" ng-class="{'with-thumb-custom': hasThumb}">
-            <span class="disclosure tag">{{"category"}}</span>
+            <span class="disclosure tag">{{item.categories}}</span>
             <span class="thumb" ng-if="hasThumb && data.hasItemThumb(item)">
                 <img ng-src="{{data.getItemThumb(item, 100, 's')}}" class="img-rounded custom">
             </span>
