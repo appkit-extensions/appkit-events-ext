@@ -21,7 +21,13 @@
                 <img ng-src="{{data.getItemThumb(item, 100, 's')}}" class="img-rounded custom">
             </span>
             <h6>{{item.summary}}</h6>
-            <p>{{item.description}}</p>
+            <p>description: {{item.description}}</p>
+            <p>uid: {{item.uid}}</p>
+            <p>location: {{item.location}}</p>
+            <p>duration: {{item.duration.weeks}} weeks, {{item.duration.days}} days, {{item.duration.hours}} hours</p>
+            <p>starDate: {{item.startDate.toJSDate()}}</p>
+            <p>endDate: {{item.endDate.toJSDate()}}</p>
+            <p>organizer: {{item.organizer}}</p>
         </li>
     </ul>
 
