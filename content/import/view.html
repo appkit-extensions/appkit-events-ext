@@ -10,7 +10,9 @@
 
         <div ng-if="error" class="pageError">{{error}}</div>
 
-        {{name}}
+        <textarea ng-model="textICal"></textarea>
+        <button ng-click="parseICal()">Import</button>
+        <pre>{{resultsICal}}</pre>
 
     </div>
     <div id="propbar">
