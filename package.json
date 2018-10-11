@@ -29,11 +29,6 @@
               "name": "Categories",
               "data": "categories",
               "display": "grid"
-            },
-            "import": {
-              "name": "Import",
-              "view": "content/import/view.html",
-              "controller": "content/import/controller.js"
             }
           }
         },
@@ -42,8 +37,7 @@
           "pages": {
             "start": "ui/pages/start.js"
           },
-          "components": {
-          },
+          "components": {},
           "module": "ui/module.js"
         }
       }
